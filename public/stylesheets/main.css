@@ -1,0 +1,25 @@
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+#form-delete{
+    display: inline;
+}
+#komentari{
+    overflow-wrap: break-word;
+}
+/* Google Maps */
+#map {
+    height: 400px;
+    width: 100%;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}

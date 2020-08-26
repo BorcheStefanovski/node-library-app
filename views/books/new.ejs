@@ -1,0 +1,48 @@
+<% include ../partials/header %>
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center">Create a New Book</h1>
+        <div style="width: 30%; margin: 25px auto;">
+            <form action="/books" method="POST">
+                <div class="form-group">
+                    <!--<label for="name">Title:</label>-->
+                    <input class="form-control" type="text" name="name" placeholder="title">
+                </div>
+                <div class="form-group">
+                    <!--<label for="image">Image URL:</label>-->
+                    <input class="form-control" type="text" name="image" placeholder="image url">
+                </div>
+                <div class="form-group">
+                    <!--<label for="name">Description:</label>-->
+                    <textarea class="form-control" name="description" placeholder="description"></textarea>
+                </div>
+                <div class="form-group">
+                    <!--<label for="price">Price:</label>-->
+                    <input class="form-control" type="number" name="price" placeholder="price in $" min="0.1" step="0.1">
+                </div>
+                <div class="form-group">
+                    <!--<label for="bookAuthor">Author:</label>-->
+                    <input class="form-control" type="text" name="bookAuthor" placeholder="author">
+                </div>
+                <div class="form-group">
+                    <!--<label for="year">Year of publicatoin:</label>-->
+                    <input class="form-control" type="number" name="year" placeholder="year of publication">
+                </div>
+                <div class="form-group">
+                    <!--<label for="pages">Number of pages:</label>-->
+                    <input class="form-control" type="number" name="pages" placeholder="number of pages" min="1" step="1">
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input class="form-control" type="text" name="location" id="location" placeholder="Yosemite National Park, CA">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+                </div>
+            </form>
+            <a href="/books">Go Back</a>
+        </div>
+    </div>
+</div>
+<% include ../partials/footer %>
+
